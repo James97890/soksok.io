@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Жәдігер & Гүлнұр - Қыз ұзату</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: url('https://i.imgur.com/aPqKBAo.png') no-repeat center top;
+      background-size: 100% 100%;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 800px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-family: "Lobster", sans-serif;
+      font-size: 3em;
+      margin-top: 20px;
+      color: #b30059;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #cc0066;
+    }
+
+    .invitation {
+      margin: 10px 0 30px;
+      font-size: 1.2em;
+    }
+
+    .rings {
+      width: 220px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin: 20px 0;
+    }
+
+
+    .decor-left {
+      background-image: url('');
+      position: fixed;
+      left: 0;
+      top: 250px;
+      bottom: 25;
+      width: 371px;
+      height: 50vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: 0;
+    }
+
+    .decor-right {
+      right: 0;
+      background-image: url('https://cdn.pixabay.com/photo/2016/11/29/09/37/roses-1867632_1280.jpg');
+      position: fixed;
+      top: 250px;
+      bottom: 25;
+      width: 371px;
+      height: 50vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: 0;
+    }
+
+    .below-image {
+      margin: 10px 0 30px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      white-space: pre-line;
+      color: #660033;
+    }
+
+    .timer {
+      font-size: 1.5em;
+      margin: 20px 0;
+      color: #880044;
+      font-weight: bold;
+    }
+
+    .calendar {
+      margin: 20px auto;
+      max-width: 320px;
+      border-collapse: collapse;
+    }
+
+    .calendar td, .calendar th {
+      border: 1px solid #ccc;
+      padding: 8px;
+      font-size: 1em;
+    }
+
+    .calendar th {
+      background-color: #ffcce6;
+    }
+
+    .highlight {
+      background-color: #ff80bf;
+      color: white;
+      border-radius: 50%;
+    }
+
+    audio {
+      margin: 20px auto;
+    }
+
+    .info {
+      font-size: 1.1em;
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+
+    @keyframes fadeInUp {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    .animated {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @media (max-width: 700px) {
+      .decor-left, .decor-right {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2em; }
+      .timer { font-size: 1.2em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="decor decor-left"></div>
+  <div class="decor decor-right"></div>
+  <div class="container animated">
+    <h1>Гүлнұр</h1>
+    <h2>Ақ босағаға аттану</h2>
+
+
+    <img src="https://optim.tildacdn.pro/tild6530-3238-4332-b466-616665356534/-/resize/240x/-/format/webp/___79.png" alt="Wedding rings" class="rings" />
+
+    <div class="below-image">
+Құрметті ағайын-туыс, дос-жаран!
+Ортақ қуанышымыздың куәсі болыңыздар!
+Сіздерді аяулы қызымыз Гүлнұрдың ұзату тойына арналған
+салтанатты ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!
+
+Ізгі тілекпен 
+Той иелері: Бекбосын – Зоя
+    </div>
+
+
+    <table class="calendar">
+      <tr>
+        <th>Дс</th><th>Сс</th><th>Ср</th><th>Бс</th><th>Жм</th><th>Сн</th><th>Жк</th>
+      </tr>
+      <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td class="highlight">10</td></tr>
+      <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
+      <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+      <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr>
+    </table>
+
+    <div class="timer" id="countdown"></div>
+
+    <div class="info">
+      <p>Той басталу уақыты: <strong>13:00 - де</strong></p>
+      <p>Мекен-жайымыз:<br> Қарағанды қаласы, 16-шы микрорайон, 41/3, <br><strong>Дастан мейрамханасы</strong></p>
+    </div>
+
+    <audio autoplay loop>
+      <source src="https://cdn.pixabay.com/audio/2023/03/23/audio_1d8f18c1ac.mp3" type="audio/mpeg">
+      Aq Koilek - Algyt
+    </audio>
+  </div>
+
+  <script>
+    const countdown = document.getElementById("countdown");
+    const eventDate = new Date("2025-08-10T00:00:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance < 0) {
+        countdown.innerHTML = "Мероприятие прошло";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `Қалған уақыт: ${days} күн, ${hours} сағ, ${minutes} мин, ${seconds} сек`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
